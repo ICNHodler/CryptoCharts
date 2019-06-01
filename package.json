@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"no test specified\""
   },
+  "dependencies": {
+    "apexcharts": "3.7.0"
+  },
   "repository": "github:ICNHodler/CryptoCharts",
   "author": "JesusThatsGreat",
   "license": "MIT"
