@@ -1,0 +1,46 @@
+.apexcharts-zoom-icon {
+  display: none;
+}
+.footer {
+  margin-top: -20px;
+  font-size: 12px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: monospace;
+}
+.image {
+  width: 30px;
+}
+.arrow_box {
+  padding: 10px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.tooltip-weights {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  display: block;
+  font-size: 12px;
+}
+.pc_negative {
+  color: red;
+  font-weight: bold;
+}
+.pc_positive {
+  color: green;
+  font-weight: bold;
+}
+.tooltip-heatmap-date {
+  font-size: 11px;
+  color: #777;
+}
+.tooltip-heatmap-price {
+  color: #000;
+  margin-right: 5px;
+}
+/*.apexcharts-tooltip {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: orange;
+}*/
