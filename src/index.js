@@ -1,3 +1,5 @@
+import "core-js/features/promise";
+import "regenerator-runtime/runtime";
 import "./styles.css";
 import { roiComparisonChart } from "./roiComparison/create_chart";
 import { roiHeatmap } from "./roiHeatmap/create_chart";
