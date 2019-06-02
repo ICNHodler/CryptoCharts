@@ -10,7 +10,7 @@
   "dependencies": {
     "apexcharts": "3.7.0"
   },
-  "repository": "github:ICNHodler/CryptoCharts",
+  "repository": "https://github.com/ICNHodler/CryptoCharts.git",
   "author": "JesusThatsGreat",
   "license": "MIT",
   "devDependencies": {
