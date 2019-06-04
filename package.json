@@ -1,6 +1,6 @@
 {
   "name": "cryptocharts",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Beautiful, interactive, ready-to-go crypto SVG charts",
   "main": "src/index.js",
   "scripts": {
