@@ -1,4 +1,4 @@
-import "core-js/features/promise";
+import Promise from "core-js/features/promise";
 import "regenerator-runtime/runtime";
 import "./styles.css";
 import { roiComparisonChart } from "./roiComparison/create_chart";
