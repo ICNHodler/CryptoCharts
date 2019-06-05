@@ -16,9 +16,9 @@ export function priceHeatmap(x) {
 export function priceHistory(x) {
   priceSparkline(x);
 }
-export function portfolioAssetsPie(x) {
+export function cryptoFundPie(x) {
   portfolioHoldings(x);
 }
-export function portfolioAssetsBar(x) {
+export function cryptoFundBar(x) {
   portfolioHoldingsBar(x);
 }

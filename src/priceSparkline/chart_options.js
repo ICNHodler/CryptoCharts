@@ -5,26 +5,6 @@ function chartOptions(userinput, usercoins, values) {
   if (usercoins) {
     the_categories = [].concat.apply([], usercoins);
   }
-  /*var max = Math.max.apply(
-    Math,
-    values.map(function(o) {
-      return o.max;
-    })
-  );
-  var min = Math.min.apply(
-    Math,
-    values.map(function(o) {
-      return o.min;
-    })
-  );
-  var minval = 0;
-  var maxval = 0;
-  if (min < 0) {
-    minval = Math.ceil(min) - 1;
-  }
-  if (max > 0) {
-    maxval = Math.ceil(max) + 1;
-  }*/
   var options = {
     chart: {
       id: userinput.chart_title,
@@ -56,7 +36,7 @@ function chartOptions(userinput, usercoins, values) {
     },
     series: values,
     title: {
-      text: "ROI of " + the_categories + " over time",
+      text: the_categories + " price over time",
       align: "left"
     },
     grid: {

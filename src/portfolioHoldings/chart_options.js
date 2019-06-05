@@ -76,7 +76,7 @@ function chartOptions(userinput, usercoins, values) {
     },
     colors: getColors(),
     title: {
-      text: the_categories + " Portfolio Assets",
+      text: the_categories + " Crypto Fund Breakdown",
       align: "center",
       style: {
         fontSize: "20px"

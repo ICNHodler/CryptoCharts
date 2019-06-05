@@ -94,7 +94,7 @@ function chartOptions(userinput, usercoins, values) {
     },
     colors: getColors(),
     title: {
-      text: the_categories.join(", ") + " Portfolios",
+      text: the_categories.join(", ") + " Crypto Funds",
       align: "center",
       style: {
         fontSize: "20px"
