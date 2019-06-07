@@ -21,7 +21,7 @@ and once installed then `import * as CryptoCharts from "cryptocharts"` in your m
 
 ---
 # Creating your first chart
-There are many chart types and demos which you'll find in the navigation menu but as a quick example, these few lines of code create an area chart showing the ROI between ETH and BTC over the past 90 days.
+There are many chart types and demos which you'll find in the navigation menu but as a quick example, these few lines of code create an area chart showing the ROI between ETH, BTC, BLX and CAR (ICONOMI crypto funds) over the past 90 days.
 
 ```html
 <div id="mychart"></div>
