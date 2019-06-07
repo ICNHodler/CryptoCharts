@@ -29,7 +29,8 @@ There are many chart types and demos which you'll find in the navigation menu bu
 ```js
 CryptoCharts.roiComparison({
   chart_id: "mychart",
-  cryptocompare_tickers: ["BTC", "ETH"],
+  cryptocompare_tickers: ["BTC","ETH"],
+  iconomi_tickers: ["BLX","CAR"],
   last_days: 90
 });
 ```
@@ -43,14 +44,15 @@ The library is powered by ApexCharts and there are a huge number of options avai
 CryptoCharts.roiComparison({
   chart_id: "mychart",
   cryptocompare_tickers: ["BTC", "ETH"],
+  iconomi_tickers: ["BLX","CAR"],
   last_days: 90,
   options: {
-    colors: ["#88AA24","#EF1273"],
+    colors: ["#88AA24","#EF1273","#122673","#000000"],
     title: {
       text: undefined
     },
-    chart:{
-      type: 'bar'
+    chart: {
+      type: 'line'
     }
   }
 });
