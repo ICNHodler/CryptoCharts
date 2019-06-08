@@ -39,6 +39,29 @@ iframe{
   border: 1px solid #efefef;
   padding: 20px;
   border-radius: 5px;
+  position: relative;
+  min-height: 300px;
+}
+.loading {
+  height: 0;
+  width: 0;
+  padding: 15px;
+  border: 6px solid #265cdd;
+  border-right-color: #bfd1fc;
+  border-radius: 22px;
+  -webkit-animation: rotate 0.5s infinite linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -22px;
+  margin-top: -22px;
+  z-index: 999999;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @media screen and (max-width: 768px){
 	.sidebar-toggle{
@@ -62,6 +85,7 @@ iframe{
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
   <script src="https://cdn.jsdelivr.net/npm/cryptocharts"></script>
 </body>
 </html>

@@ -2,13 +2,26 @@
 
 Beautiful, interactive, ready-to-go crypto SVG charts. This library makes it easy to display crypto prices over time, ROI over time, ICONOMI crypto fund holdings and more. Currently works with ICONOMI and CryptoCompare APIs with a dependency on apexcharts.js.
 
-<div id="mychart" class="box"></div>
+<div id="mychart" class="box">
+  <div class="loading"></div>
+</div>
 <script>
 CryptoCharts.roiComparison({
   chart_id: "mychart",
   cryptocompare_tickers: ["BTC","ETH"],
   iconomi_tickers: ["BLX","CAR"],
-  last_days: 90
+  last_days: 90,
+  options:{
+    chart: {
+      events: {
+        mounted: function(chartContext, config) {
+          setTimeout(function(){
+            document.querySelectorAll("#mychart .loading")[0].remove();
+          }, 500);
+        }
+      }
+    }
+  }
 });
 </script>
 

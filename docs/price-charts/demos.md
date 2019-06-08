@@ -1,6 +1,28 @@
 # Sparkline Chart
 No labels, legend or values on x & y axis, just a simple shape with price on hover over data points.
 
+<div id="priceSpark" class="box">
+  <div class="loading"></div>
+</div>
+<script>
+CryptoCharts.priceHistory({
+  chart_id: "priceSpark",
+  iconomi_tickers: ["BLX"],
+  last_days: 30,
+  options: {
+    chart: {
+      events: {
+        mounted: function(chartContext, config) {
+          setTimeout(function(){
+            document.querySelectorAll("#priceSpark .loading")[0].remove();
+          }, 500);
+        }
+      }
+    }
+  }
+});
+</script>
+
 ```html
 <div id="priceSpark"></div>
 ```
@@ -13,4 +35,5 @@ CryptoCharts.priceHistory({
 });
 ```
 
+Play with demo on codepen:
 <iframe height="320" style="width: 100%;" scrolling="no" title="ROI of crypto assets over time" src="//codepen.io/jesusthatsgreat/embed/preview/OYGqBJ/?height=320&theme-id=37041&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
