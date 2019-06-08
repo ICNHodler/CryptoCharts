@@ -2,8 +2,8 @@
 [![GitHub version](https://badge.fury.io/gh/ICNHodler%2FCryptoCharts.svg)](https://www.npmjs.com/package/cryptocharts)
 [![npm version](https://badge.fury.io/js/cryptocharts.svg)](https://www.npmjs.com/package/cryptocharts)
 [![npm](https://img.shields.io/npm/dw/cryptocharts.svg)](https://www.npmjs.com/package/cryptocharts)
-![GitHub last commit](https://img.shields.io/github/last-commit/ICNHodler/CryptoCharts.svg)
-![Twitter Follow](https://img.shields.io/twitter/follow/icnhodler.svg?style=popout)
+[![GitHub last commit](https://img.shields.io/github/last-commit/ICNHodler/CryptoCharts.svg)](https://github.com/ICNHodler/CryptoCharts)
+[![Twitter Follow](https://img.shields.io/twitter/follow/icnhodler.svg?style=popout)](https://twitter.com/icnhodler)
 
 # Crypto Charts
 
