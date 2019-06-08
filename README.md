@@ -1,3 +1,10 @@
+[![GitHub license](https://img.shields.io/github/license/ICNHodler/CryptoCharts.svg)](https://github.com/ICNHodler/CryptoCharts/blob/master/LICENSE)
+[![GitHub version](https://badge.fury.io/gh/ICNHodler%2FCryptoCharts.svg)](https://www.npmjs.com/package/cryptocharts)
+[![npm version](https://badge.fury.io/js/cryptocharts.svg)](https://www.npmjs.com/package/cryptocharts)
+[![npm](https://img.shields.io/npm/dw/cryptocharts.svg)](https://www.npmjs.com/package/cryptocharts)
+![GitHub last commit](https://img.shields.io/github/last-commit/ICNHodler/CryptoCharts.svg)
+![Twitter Follow](https://img.shields.io/twitter/follow/icnhodler.svg?style=popout)
+
 # Crypto Charts
 
 Beautiful, interactive, ready-to-go crypto SVG charts. This library makes it easy to display crypto prices over time, ROI over time, ICONOMI crypto fund holdings and more. Currently works with ICONOMI and CryptoCompare APIs with a dependency on apexcharts.js.
