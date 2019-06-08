@@ -80,6 +80,14 @@ iframe{
   	  themeColor: '#265cdd',
       coverpage: true,
       executeScript: true
+    };
+    function removeFadeOut( el, speed ) {
+        var seconds = speed/1000;
+        el.style.transition = "opacity "+seconds+"s ease";
+        el.style.opacity = 0;
+        setTimeout(function() {
+            el.parentNode.removeChild(el);
+        }, speed);
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>

@@ -63,9 +63,7 @@ CryptoCharts.cryptoFundPie({
       type: 'donut',
       events: {
         mounted: function(chartContext, config) {
-          setTimeout(function(){
-            document.querySelectorAll("#holdings .loading")[0].remove();
-          }, 500);
+          removeFadeOut(document.querySelectorAll("#holdings .loading")[0], 500);
         }
       }
     }
@@ -79,9 +77,7 @@ CryptoCharts.cryptoFundBar({
       height: 400,
       events: {
         mounted: function(chartContext, config) {
-          setTimeout(function(){
-            document.querySelectorAll("#holdingsBar .loading")[0].remove();
-          }, 500);
+          removeFadeOut(document.querySelectorAll("#holdingsBar .loading")[0], 500);
         }
       }
     }

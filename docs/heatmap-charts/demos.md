@@ -13,9 +13,7 @@ CryptoCharts.priceHeatmap({
     chart: {
       events: {
         mounted: function(chartContext, config) {
-          setTimeout(function(){
-            document.querySelectorAll("#myheatmap .loading")[0].remove();
-          }, 500);
+          removeFadeOut(document.querySelectorAll("#myheatmap .loading")[0], 500);
         }
       }
     }

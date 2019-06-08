@@ -13,9 +13,7 @@ CryptoCharts.priceHistory({
     chart: {
       events: {
         mounted: function(chartContext, config) {
-          setTimeout(function(){
-            document.querySelectorAll("#priceSpark .loading")[0].remove();
-          }, 500);
+          removeFadeOut(document.querySelectorAll("#priceSpark .loading")[0], 500);
         }
       }
     }

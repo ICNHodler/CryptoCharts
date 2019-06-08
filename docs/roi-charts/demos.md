@@ -14,9 +14,7 @@ CryptoCharts.roiComparison({
     chart: {
       events: {
         mounted: function(chartContext, config) {
-          setTimeout(function(){
-            document.querySelectorAll("#roichart .loading")[0].remove();
-          }, 500);
+          removeFadeOut(document.querySelectorAll("#roichart .loading")[0], 500);
         }
       }
     }
