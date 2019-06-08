@@ -34,6 +34,12 @@ section.cover.has-mask .mask{
 iframe{
   border: none !important;
 }
+.box{
+  box-shadow: #ccc 0px 2px 2px 0px;
+  border: 1px solid #efefef;
+  padding: 20px;
+  border-radius: 5px;
+}
 @media screen and (max-width: 768px){
 	.sidebar-toggle{
 		padding-top: 10px;
@@ -50,11 +56,12 @@ iframe{
   	  loadSidebar: true,
   	  themeColor: '#265cdd',
       coverpage: true,
-      executeScript: false
+      executeScript: true
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cryptocharts"></script>
 </body>
 </html>
