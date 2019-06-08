@@ -1,41 +1,13 @@
-A full list of available options can be seen at ApexCharts: https://apexcharts.com/docs/options/
+# ROI Charts Configuration
 
-<!--```js
-CryptoCharts.roiComparison({
-  chart_id: "mychart",
-  iconomi_tickers: ["BLX", "CAR"],
-  cryptocompare_tickers: ["BTC", "ETH"],
-  cryptocompare_api_key: null,
-  last_days: 35,
-  custom_data: [
-    {
-      name: "STICKS",
-      data: [
-        { x: 1554840000, y: 0.14 },
-        { x: 1555012800, y: 0.13 },
-        { x: 1555563600, y: 0.17 }
-      ]
-    },
-    {
-      name: "STONES",
-      data: [
-        { x: 1554840000, y: 0.14 },
-        { x: 1555012800, y: 0.13 },
-        { x: 1555563600, y: 0.15 }
-      ]
-    }
-  ],
-  options: {
-    theme: {
-      mode: "light",
-      palette: "palette5"
-    },
-    markers: {
-      size: 4
-    },
-    chart: {
-      type: "line"
-    }
-  }
-});
-```-->
+Note: chart_id is a required param along with at least one value in either iconomi_tickers, cryptocompare_tickers or custom_data.
+
+| Param  | Description | Example |
+| --- | --- | --- |
+| chart_id <br><small>String</small> | chart gets inserted in to this element id | `"mychart"`
+| iconomi_tickers <br><small>Array</small> | [ICONOMI](https://www.iconomi.com/crypto-funds) crypto fund tickers | `["BLX", "CAR"]`
+| cryptocompare_tickers <br><small>Array</small> | Crypto symbols /  tickers as supported by [CryptoCompare](https://www.cryptocompare.com/) | `["BTC", "ETH"]`
+| cryptocompare_api_key <br><small>String</small> | API key which will be appended to requests | `"hffrjkjwrggrwrwjg"`
+| last_days <br><small>Number</small> | number of days to display history for | `30`
+| custom_data <br><small>Array</small> | Array of objects containing name and data params including time (x) and price (y) values | ```[{name: "STICKS",  data: [{ x: 1554840000, y: 0.14 }]},{  name: "STONES",  data: [{ x: 1554840000, y: 0.19 }]}]```
+| options <br><small>Object</small> | Full list of options available at https://apexcharts.com/docs/options/ | ```{theme: { mode: "light", palette: "palette5" }, markers: { size: 4 }}```
