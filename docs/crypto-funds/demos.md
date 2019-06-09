@@ -22,8 +22,7 @@ CryptoCharts.cryptoFundPie({
 });
 ```
 
-Play with demo on codepen:
-<iframe height="500" style="width: 100%;" scrolling="no" title="ROI of crypto assets over time" src="//codepen.io/jesusthatsgreat/embed/preview/joRjaW/?height=500&theme-id=37041&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
+Play with demo on codepen: https://codepen.io/jesusthatsgreat/pen/joRjaW/
 
 ---
 
@@ -49,8 +48,7 @@ CryptoCharts.cryptoFundBar({
 });
 ```
 
-Play with demo on codepen:
-<iframe height="600" style="width: 100%;" scrolling="no" title="ICONOMI Crypto Fund Stacked Bar Chart" src="//codepen.io/jesusthatsgreat/embed/preview/EzJqor/?height=600&theme-id=37041&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
+Play with demo on codepen: https://codepen.io/jesusthatsgreat/pen/EzJqor/
 
 <script>
 CryptoCharts.cryptoFundPie({

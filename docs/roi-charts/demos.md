@@ -34,4 +34,4 @@ CryptoCharts.roiComparison({
 });
 ```
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="ROI of crypto assets over time" src="//codepen.io/jesusthatsgreat/embed/preview/YbMbPp/?height=600&theme-id=37041&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
+Play with demo on codepen: https://codepen.io/jesusthatsgreat/pen/YbMbPp/
