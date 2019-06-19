@@ -82,7 +82,7 @@ function chartOptions(userinput, usercoins, values) {
 
   var options = {
     chart: {
-      id: userinput.chart_title,
+      id: userinput.chart_id,
       height: 200,
       animations: {
         enabled: true
@@ -105,7 +105,8 @@ function chartOptions(userinput, usercoins, values) {
     legend: {
       position: "top",
       markers: {
-        radius: 0
+        radius: 0,
+        offsetY: 0
       },
       onItemClick: {
         toggleDataSeries: true
@@ -115,10 +116,6 @@ function chartOptions(userinput, usercoins, values) {
       enabled: false
     },
     series: newdata,
-    title: {
-      text: "Daily % change of " + the_categories + " over time",
-      align: "left"
-    },
     grid: {
       position: "back",
       yaxis: {
@@ -265,6 +262,9 @@ function chartOptions(userinput, usercoins, values) {
       delete options.colors;
     }
     mergeDeep(options, userinput.options);
+    if(userinput.options.title === true){
+      options.title = { text: "Daily % change of " + the_categories + " over time"}
+    }
   }
 
   return options;

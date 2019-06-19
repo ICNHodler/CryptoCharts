@@ -40,6 +40,7 @@ function chartOptions(userinput, usercoins, values) {
       }
     },
     chart: {
+      id: userinput.chart_id,
       type: "donut"
     },
     series: vals,
@@ -74,14 +75,7 @@ function chartOptions(userinput, usercoins, values) {
         );
       }
     },
-    colors: getColors(),
-    title: {
-      text: the_categories + " Crypto Fund Breakdown",
-      align: "center",
-      style: {
-        fontSize: "20px"
-      }
-    }
+    colors: getColors()
   };
 
   if (userinput.options) {
@@ -89,6 +83,9 @@ function chartOptions(userinput, usercoins, values) {
       delete options.colors;
     }
     mergeDeep(options, userinput.options);
+    if(userinput.options.title === true){
+      options.title = { text: the_categories + " Crypto Fund Breakdown" }
+    }
   }
 
   return options;

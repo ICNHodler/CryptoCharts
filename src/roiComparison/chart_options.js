@@ -27,7 +27,7 @@ function chartOptions(userinput, usercoins, values) {
   }
   var options = {
     chart: {
-      id: userinput.chart_title,
+      id: userinput.chart_id,
       height: 500,
       type: "area",
       toolbar: {
@@ -68,10 +68,6 @@ function chartOptions(userinput, usercoins, values) {
       width: 2
     },
     series: values,
-    title: {
-      text: "ROI of " + the_categories + " over time",
-      align: "left"
-    },
     grid: {
       yaxis: {
         lines: {
@@ -139,10 +135,7 @@ function chartOptions(userinput, usercoins, values) {
           var options = {
             year: "numeric",
             month: "short",
-            day: "2-digit",
-            hour: "numeric",
-            minute: "numeric",
-            timeZoneName: "short"
+            day: "2-digit"
           };
           return new Date(value).toLocaleDateString("en-GB", options);
         }
@@ -172,6 +165,9 @@ function chartOptions(userinput, usercoins, values) {
       delete options.colors;
     }
     mergeDeep(options, userinput.options);
+    if(userinput.options.title === true){
+      options.title = { text: "ROI of " + the_categories + " over time"}
+    }
   }
 
   return options;

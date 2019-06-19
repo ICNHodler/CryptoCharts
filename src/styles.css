@@ -40,3 +40,23 @@
   color: #000;
   margin-right: 5px;
 }
+.cryptochart-container {
+  position: relative;
+  min-height: 300px;
+  transition: min-height 0.3s ease-in-out;
+}
+.cryptochart_loading {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+}
+.cryptochart_loading svg {
+  width: 7%;
+  min-width: 40px;
+  margin: auto;
+  height: auto;
+}

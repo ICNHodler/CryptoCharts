@@ -7,7 +7,7 @@ function chartOptions(userinput, usercoins, values) {
   }
   var options = {
     chart: {
-      id: userinput.chart_title,
+      id: userinput.chart_id,
       sparkline: {
         enabled: true
       },
@@ -35,10 +35,6 @@ function chartOptions(userinput, usercoins, values) {
       width: 2
     },
     series: values,
-    title: {
-      text: the_categories + " price over time",
-      align: "left"
-    },
     grid: {
       yaxis: {
         lines: {
@@ -60,7 +56,7 @@ function chartOptions(userinput, usercoins, values) {
       }
     },
     xaxis: {
-      format: "dd MMM yyyy - HH:mm",
+      format: "dd MMM yyyy",
       type: "datetime",
       axisTicks: {
         show: false
@@ -78,7 +74,7 @@ function chartOptions(userinput, usercoins, values) {
     tooltip: {
       shared: true,
       x: {
-        format: "dd MMM yyyy - HH:mm"
+        format: "dd MMM yyyy"
       },
       y: {
         formatter: function(seriesName, opt) {
@@ -114,11 +110,78 @@ function chartOptions(userinput, usercoins, values) {
     }
   }
 
+  // if user enables axes view
+  if (userinput.axes === true){
+    options.chart.sparkline = false;
+    options.yaxis = {
+      labels: {
+        style: {
+          color: "#555555",
+          fontSize: "12px"
+        },
+        formatter: function(value) {
+          return "$"+value.toFixed(2);
+        }
+      },
+      axisTicks: {
+        show: true,
+        color: "#ccc"
+      },
+      axisBorder: {
+        show: true,
+        color: "#ccc"
+      }
+    }
+    options.xaxis = {
+      type: "category",
+      axisTicks: {
+        show: true,
+        color: "#ccc"
+      },
+      axisBorder: {
+        show: true,
+        color: "#ccc"
+      },
+      labels: {
+        style: {
+          colors: "#555555",
+          fontSize: "12px"
+        },
+        formatter: function(value, timestamp, index) {
+          var options = {
+            month: "short",
+            day: "2-digit"
+          };
+          return new Date(timestamp).toLocaleDateString("en-GB", options);
+        }
+      },
+      tooltip: {
+        enabled: false
+      }
+    }
+    options.tooltip = {
+      x: {
+        formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
+          var options = {
+            year: "numeric",
+            month: "short",
+            day: "2-digit"
+          };
+          return new Date(value).toLocaleDateString("en-GB", options);
+        }
+      }
+    }
+  }
+  // end of user updated axes
+
   if (userinput.options) {
     if (userinput.options.theme) {
       delete options.colors;
     }
     mergeDeep(options, userinput.options);
+    if(userinput.options.title === true){
+      options.title = { text: the_categories + " price over time" }
+    }
   }
 
   return options;

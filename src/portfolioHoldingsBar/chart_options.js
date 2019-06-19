@@ -37,6 +37,7 @@ function chartOptions(userinput, usercoins, values) {
       }
     },
     chart: {
+      id: userinput.chart_id,
       type: "bar",
       stacked: true,
       //height: 300,
@@ -93,13 +94,6 @@ function chartOptions(userinput, usercoins, values) {
       }
     },
     colors: getColors(),
-    title: {
-      text: the_categories.join(", ") + " Crypto Funds",
-      align: "center",
-      style: {
-        fontSize: "20px"
-      }
-    },
     fill: {
       opacity: 1,
       type: "gradient",
@@ -121,6 +115,9 @@ function chartOptions(userinput, usercoins, values) {
       delete options.colors;
     }
     mergeDeep(options, userinput.options);
+    if(userinput.options.title === true){
+      options.title = { text: the_categories.join(", ") + " Crypto Funds" }
+    }
   }
 
   return options;

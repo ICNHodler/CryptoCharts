@@ -1,6 +1,8 @@
 import { chartOptions } from "./chart_options";
 import ApexCharts from "apexcharts";
 import { makeDataConsistent } from "./make_data_consistent";
+import { loading } from "./../common/loading";
+import { removeFadeOut } from "./../common/utils";
 
 async function roiHeatmap(userinput) {
   var iticks = null;
@@ -31,6 +33,9 @@ async function roiHeatmap(userinput) {
     });
     alltickers.push(arr);
   }
+  if (userinput.loading_indicator){
+    loading(chartid, userinput);
+  }
   var alldata = await makeDataConsistent(
     iticks,
     cticks,
@@ -43,6 +48,10 @@ async function roiHeatmap(userinput) {
     chartOptions(userinput, alltickers, alldata)
   );
   chart.render();
+  //chart rendered so we can remove loading icon
+  if (userinput.loading_indicator){
+    removeFadeOut(document.querySelector(`.${chartid}.cryptochart_loading`), 2000);
+  }
 }
 
 export { roiHeatmap };
