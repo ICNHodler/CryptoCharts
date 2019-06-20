@@ -45,7 +45,7 @@ CryptoCharts.roiComparison({
 https://codepen.io/jesusthatsgreat/embed/RmOJOJ/
 
 # Options
-The library is powered by ApexCharts and there are a huge number of options available from their docs here: https://apexcharts.com/docs/options/. For example in the chart above if you decide you want to change the chart colours, hide the chart title and turn it in to a line chart (instead of an area chart), you can do so like this:
+The library is powered by ApexCharts and there are a huge number of options available from their docs here: https://apexcharts.com/docs/options/. For example in the chart above if you decide you want to change the chart colours, add a chart title and turn it in to a line chart (instead of an area chart), you can do so like this:
 
 ```js
 CryptoCharts.roiComparison({
@@ -55,9 +55,7 @@ CryptoCharts.roiComparison({
   last_days: 90,
   options: {
     colors: ["#88AA24","#EF1273","#122673","#000000"],
-    title: {
-      text: undefined
-    },
+    title: true,
     chart: {
       type: 'line'
     }

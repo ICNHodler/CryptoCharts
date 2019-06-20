@@ -2,7 +2,6 @@
 Display a breakdown of an ICONOMI crypto fund in the form of a pie or donut chart.
 
 <div id="holdings" class="box">
-  <div class="loading"></div>
 </div>
 
 ```html
@@ -18,7 +17,8 @@ CryptoCharts.cryptoFundPie({
       width: 700,
       type: 'donut' // or 'pie'
     }
-  }
+  },
+  loading_indicator: true
 });
 ```
 
@@ -30,7 +30,6 @@ Play with demo on codepen: https://codepen.io/jesusthatsgreat/pen/joRjaW/
 Display a breakdown of one or many ICONOMI crypto funds in the form of a 100% stacked horizontal bar chart.
 
 <div id="holdingsBar" class="box">
-  <div class="loading"></div>
 </div>
 
 ```html
@@ -44,7 +43,8 @@ CryptoCharts.cryptoFundBar({
     chart: {
       height: 400
     }
-  }
+  },
+  loading_indicator: true
 });
 ```
 
@@ -58,27 +58,19 @@ CryptoCharts.cryptoFundPie({
     chart: {
       height: 400,
       width: 700,
-      type: 'donut',
-      events: {
-        mounted: function(chartContext, config) {
-          removeFadeOut(document.querySelectorAll("#holdings .loading")[0], 500);
-        }
-      }
+      type: 'donut'
     }
-  }
+  },
+  loading_indicator: true
 });
 CryptoCharts.cryptoFundBar({
   chart_id: "holdingsBar",
   iconomi_tickers: ["BLX","CAR","MOON"],
   options: {
     chart: {
-      height: 400,
-      events: {
-        mounted: function(chartContext, config) {
-          removeFadeOut(document.querySelectorAll("#holdingsBar .loading")[0], 500);
-        }
-      }
+      height: 400
     }
-  }
+  },
+  loading_indicator: true
 });
 </script>

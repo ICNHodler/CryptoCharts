@@ -2,22 +2,13 @@
 Display a calendar heatmap of the daily % gain/loss of any ICONOMI crypto fund or CryptoCompare asset.
 
 <div id="myheatmap" class="box">
-  <div class="loading"></div>
 </div>
 <script>
 CryptoCharts.priceHeatmap({
   chart_id: "myheatmap",
   iconomi_tickers: ["BLX"],
   last_days: 90,
-  options: {
-    chart: {
-      events: {
-        mounted: function(chartContext, config) {
-          removeFadeOut(document.querySelectorAll("#myheatmap .loading")[0], 500);
-        }
-      }
-    }
-  }
+  loading_indicator: true
 });
 </script>
 
@@ -29,7 +20,8 @@ CryptoCharts.priceHeatmap({
 CryptoCharts.priceHeatmap({
   chart_id: "myheatmap",
   iconomi_tickers: ["BLX"],
-  last_days: 90
+  last_days: 90,
+  loading_indicator: true
 });
 ```
 

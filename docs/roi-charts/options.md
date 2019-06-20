@@ -10,4 +10,5 @@ Note: chart_id is a required param along with at least one value in either icono
 | cryptocompare_api_key <br><small>String</small> | API key which will be appended to requests | `"hffrjkjwrggrwrwjg"`
 | last_days <br><small>Number</small> | number of days to display history for | `30`
 | custom_data <br><small>Array</small> | Array of objects containing name and data params including time (x) and price (y) values | ```[{name: "STICKS",  data: [{ x: 1554840000, y: 0.14 }]},{  name: "STONES",  data: [{ x: 1554840000, y: 0.19 }]}]```
+| loading_indicator<br><small>Boolean or object</small> | SVG loading icon containing 4 vertical bars displayed while data is being fetched  | `true` <br><small>or<small><br> `{colors: ["red","green","#000000","#123456"]}`
 | options <br><small>Object</small> | Full list of options available at https://apexcharts.com/docs/options/ | ```{theme: { mode: "light", palette: "palette5" }, markers: { size: 4 }}```

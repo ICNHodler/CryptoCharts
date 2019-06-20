@@ -3,7 +3,6 @@
 Beautiful, interactive, ready-to-go crypto SVG charts. This library makes it easy to display crypto prices over time, ROI over time, ICONOMI crypto fund holdings and more. Currently works with ICONOMI and CryptoCompare APIs with a dependency on apexcharts.js.
 
 <div id="mychart" class="box">
-  <div class="loading"></div>
 </div>
 <script>
 CryptoCharts.roiComparison({
@@ -11,15 +10,7 @@ CryptoCharts.roiComparison({
   cryptocompare_tickers: ["BTC","ETH"],
   iconomi_tickers: ["BLX","CAR"],
   last_days: 90,
-  options:{
-    chart: {
-      events: {
-        mounted: function(chartContext, config) {
-          removeFadeOut(document.querySelectorAll("#mychart .loading")[0], 500);
-        }
-      }
-    }
-  }
+  loading_indicator: true
 });
 </script>
 
@@ -61,7 +52,7 @@ Play with demo on codepen: https://codepen.io/jesusthatsgreat/pen/RmOJOJ/
 
 
 # Options
-The library is powered by ApexCharts and there are a huge number of options available from their docs here: https://apexcharts.com/docs/options/. For example in the chart above if you decide you want to change the chart colours, hide the chart title and turn it in to a line chart (instead of an area chart), you can do so like this:
+The library is powered by ApexCharts and there are a huge number of options available from their docs here: https://apexcharts.com/docs/options/. For example in the chart above if you decide you want to change the chart colours, add a default chart title and turn it in to a line chart (instead of an area chart), you can do so like this:
 
 ```js
 CryptoCharts.roiComparison({
@@ -71,9 +62,7 @@ CryptoCharts.roiComparison({
   last_days: 90,
   options: {
     colors: ["#88AA24","#EF1273","#122673","#000000"],
-    title: {
-      text: undefined
-    },
+    title: true,
     chart: {
       type: 'line'
     }

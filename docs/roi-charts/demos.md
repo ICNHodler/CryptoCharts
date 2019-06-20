@@ -2,7 +2,6 @@
 Chart the % ROI of one or many ICONOMI crypto funds or digital assets over a set period of time.
 
 <div id="roichart" class="box">
-  <div class="loading"></div>
 </div>
 <script>
 CryptoCharts.roiComparison({
@@ -10,15 +9,7 @@ CryptoCharts.roiComparison({
   iconomi_tickers: ["BLX", "CAR"],
   cryptocompare_tickers: ["BTC", "ETH"],
   last_days: 14,
-  options: {
-    chart: {
-      events: {
-        mounted: function(chartContext, config) {
-          removeFadeOut(document.querySelectorAll("#roichart .loading")[0], 500);
-        }
-      }
-    }
-  }
+  loading_indicator: true
 });
 </script>
 
@@ -30,7 +21,8 @@ CryptoCharts.roiComparison({
   chart_id: "roichart",
   iconomi_tickers: ["BLX", "CAR"],
   cryptocompare_tickers: ["BTC", "ETH"],
-  last_days: 14
+  last_days: 14,
+  loading_indicator: true
 });
 ```
 
