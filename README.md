@@ -42,7 +42,7 @@ CryptoCharts.roiComparison({
 });
 ```
 
-https://codepen.io/jesusthatsgreat/embed/RmOJOJ/
+https://codepen.io/jesusthatsgreat/pen/RmOJOJ
 
 # Options
 The library is powered by ApexCharts and there are a huge number of options available from their docs here: https://apexcharts.com/docs/options/. For example in the chart above if you decide you want to change the chart colours, add a chart title and turn it in to a line chart (instead of an area chart), you can do so like this:
@@ -63,6 +63,6 @@ CryptoCharts.roiComparison({
 });
 ```
 
-https://codepen.io/jesusthatsgreat/embed/ZNNxyO
+https://codepen.io/jesusthatsgreat/pen/ZNNxyO/
 
 Note that all options will not work with all chart types - for example in the example above you can't set the chart type to 'pie' because the data isn't in a pie-chart-friendly format (I'm not sure what you'd expect a pie chart to look like by inputting an array of dates and prices!). In general, most of the options are self explanatory and you should find they work with a little trial an error. These docs will expand over time to include more examples with frequently used options.
