@@ -1,5 +1,5 @@
 # Heatmap
-Display a calendar heatmap of the daily % gain/loss of any ICONOMI crypto fund or CryptoCompare asset.
+Display a calendar heatmap of the daily % gain/loss of any [ICONOMI](https://www.iconomi.com/crypto-funds?ref=WJVwG) crypto fund or CryptoCompare asset.
 
 <div id="myheatmap" class="box">
 </div>

@@ -4,7 +4,7 @@
 
 > Beautiful, interactive crypto SVG charts.
 
-- Supports ICONOMI & CryptoCompare APIs
+- Supports [ICONOMI](https://www.iconomi.com/crypto-funds?ref=WJVwG) & CryptoCompare APIs
 - Highly customizable appearance
 - Extensive demos and documentation
 - MIT licence

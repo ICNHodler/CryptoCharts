@@ -5,7 +5,7 @@ Note: only one ticker (or custom data) can be used for heatmaps. For example you
 | Param  | Description | Example |
 | --- | --- | --- |
 | chart_id <br><small>String</small> | chart gets inserted in to this element id | `"mychart"`
-| iconomi_tickers <br><small>Array</small> | [ICONOMI](https://www.iconomi.com/crypto-funds) crypto fund tickers | `["BLX"]`
+| iconomi_tickers <br><small>Array</small> | [ICONOMI](https://www.iconomi.com/crypto-funds?ref=WJVwG) crypto fund tickers | `["BLX"]`
 | cryptocompare_tickers <br><small>Array</small> | Crypto symbols /  tickers as supported by [CryptoCompare](https://www.cryptocompare.com/) | `["BTC"]`
 | cryptocompare_api_key <br><small>String</small> | API key which will be appended to requests | `"hffrjkjwrggrwrwjg"`
 | last_days <br><small>Number</small> | number of days to display history for | `90`
