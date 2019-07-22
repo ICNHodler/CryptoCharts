@@ -7,7 +7,7 @@
 
 # Crypto Charts
 
-Beautiful, interactive, ready-to-go crypto SVG charts. This library makes it easy to display crypto prices over time, ROI over time, ICONOMI crypto fund holdings and more. Currently works with ICONOMI and CryptoCompare APIs with a dependency on apexcharts.js.
+Beautiful, interactive, ready-to-go crypto SVG charts. This library makes it easy to display crypto prices over time, ROI over time, ICONOMI crypto fund holdings and more. Currently works with [ICONOMI](https://www.iconomi.com/crypto-funds?ref=WJVwG) and CryptoCompare APIs with a dependency on apexcharts.js.
 
 Full docs and demos: https://icnhodler.github.io/CryptoCharts/
 
