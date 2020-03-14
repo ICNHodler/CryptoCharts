@@ -1,5 +1,5 @@
 # Donut / Pie Chart
-Display a breakdown of an [ICONOMI](https://www.iconomi.com/crypto-funds?ref=WJVwG) crypto fund in the form of a pie or donut chart.
+Display a breakdown of an [ICONOMI](https://www.iconomi.com/crypto-strategies?ref=WJVwG) crypto fund in the form of a pie or donut chart.
 
 <div id="holdings" class="box">
 </div>
@@ -27,7 +27,7 @@ Play with demo on codepen: https://codepen.io/jesusthatsgreat/pen/joRjaW/
 ---
 
 # 100% Stacked Bar Chart
-Display a breakdown of one or many [ICONOMI](https://www.iconomi.com/crypto-funds?ref=WJVwG) crypto funds in the form of a 100% stacked horizontal bar chart.
+Display a breakdown of one or many [ICONOMI](https://www.iconomi.com/crypto-strategies?ref=WJVwG) crypto funds in the form of a 100% stacked horizontal bar chart.
 
 <div id="holdingsBar" class="box">
 </div>

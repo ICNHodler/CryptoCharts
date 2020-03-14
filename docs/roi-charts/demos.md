@@ -1,5 +1,5 @@
 # ROI Comparison Chart
-Chart the % ROI of one or many [ICONOMI](https://www.iconomi.com/crypto-funds?ref=WJVwG) crypto funds or digital assets over a set period of time.
+Chart the % ROI of one or many [ICONOMI](https://www.iconomi.com/crypto-strategies?ref=WJVwG) crypto funds or digital assets over a set period of time.
 
 <div id="roichart" class="box">
 </div>

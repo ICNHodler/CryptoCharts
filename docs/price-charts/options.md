@@ -5,7 +5,7 @@ Note: chart_id is a required param along with at least one value in either icono
 | Param  | Description | Example |
 | --- | --- | --- |
 | chart_id <br><small>String</small> | chart gets inserted in to this element id | `"mychart"`
-| iconomi_tickers <br><small>Array</small> | [ICONOMI](https://www.iconomi.com/crypto-funds?ref=WJVwG) crypto fund tickers | `["BLX", "CAR", "MOON"]`
+| iconomi_tickers <br><small>Array</small> | [ICONOMI](https://www.iconomi.com/crypto-strategies?ref=WJVwG) crypto fund tickers | `["BLX", "CAR", "MOON"]`
 | cryptocompare_tickers <br><small>Array</small> | Crypto symbols /  tickers as supported by [CryptoCompare](https://www.cryptocompare.com/) | `["BTC", "ETH", "BNB"]`
 | cryptocompare_api_key <br><small>String</small> | API key which will be appended to requests | `"hffrjkjwrggrwrwjg"`
 | last_days <br><small>Number</small> | number of days to display history for | `30`
