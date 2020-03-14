@@ -7,6 +7,19 @@ async function makeDataConsistent(
   customdata,
   userinput
 ) {
+  function relDiff(a, b) {
+    let percent;
+    if(b !== 0) {
+        if(a !== 0) {
+          percent = (b - a) / a * 100;
+        } else {
+          percent = b * 100;
+        }
+    } else {
+      percent = - a * 100;
+    }
+    return Math.floor(percent);
+  }
   var get_final_result = await getAllExternalData(
     usercoins,
     userccoins,
@@ -37,7 +50,7 @@ async function makeDataConsistent(
       var price = item.y;
       var origprice = thare[0].y;
       var epochTime = item.x * 1000;
-      var change = (1 - origprice / price) * 100;
+      var change = relDiff(origprice,price);
       if (change <= min) {
         min = change;
       }
