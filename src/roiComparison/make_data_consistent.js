@@ -18,7 +18,7 @@ async function makeDataConsistent(
     } else {
       percent = - a * 100;
     }
-    return Math.floor(percent);
+    return percent;
   }
   var get_final_result = await getAllExternalData(
     usercoins,

@@ -23,6 +23,14 @@ async function getPortfolioPriceData(tickers, userinput) {
     ).catch(error => console.error("Error:", error));
     var data = await response.json();
     var theresult = filteredData(data);
+	
+	// get latest price and replace today's open price with latest price
+		var latestprice = await fetch(
+			"https://api.iconomi.com/v1/daa/"+tickers[i]+"/price"
+		  ).catch(error => console.error("Error:", error));
+		var currentprice = await latestprice.json();
+		theresult[theresult.length - 1].y = currentprice.price.toString()
+	
     result.push({ name: tickers[i], data: theresult });
   }
   return result;
